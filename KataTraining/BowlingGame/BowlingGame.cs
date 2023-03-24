@@ -1,4 +1,4 @@
-﻿namespace KataTraining
+﻿namespace KataTraining.BowlingGame
 {
     public class BowlingGame
     {
@@ -6,7 +6,7 @@
         public int GetScore()
         {
             var rollIndex = 0;
-           var score = 0;
+            var score = 0;
             for (int turn = 0; turn < 10; turn++)
             {
                 if (isStrike(rollIndex))
@@ -36,7 +36,7 @@
 
         private int calcRegular(int rollIndex)
         {
-           return (_rolls[rollIndex] + _rolls[rollIndex + 1]);
+            return _rolls[rollIndex] + _rolls[rollIndex + 1];
         }
         private bool isStrike(int rollIndex)
         {
@@ -49,7 +49,7 @@
         }
         private int calcSrike(int rollIndex)
         {
-           return _rolls[rollIndex] + _rolls[rollIndex + 1] + _rolls[rollIndex + 2];
+            return _rolls[rollIndex] + _rolls[rollIndex + 1] + _rolls[rollIndex + 2];
         }
 
         public void Roll(int currentRoll)
