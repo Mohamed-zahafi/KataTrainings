@@ -1,4 +1,4 @@
-namespace KataTraining.Tests.BowlingGameTests
+namespace KataTraining.Tests
 {
     /*
         Les règles de calcul du bowling sont relativement simples, 
@@ -86,16 +86,15 @@ namespace KataTraining.Tests.BowlingGameTests
             Assert.AreEqual(300, game.GetScore());
         }
 
-        private void RollMany(int nbQuille, BowlingGame game, int count)
+        private void RollMany(int nbQuille, BowlingGame.BowlingGame game, int count)
         {
             for (int i = 0; i < count; i++)
                 game.Roll(nbQuille);
         }
 
-        private BowlingGame NewGame()
+        private BowlingGame.BowlingGame NewGame()
         {
-            var bowlingGame = new BowlingGame();
-            return bowlingGame;
+            return new BowlingGame.BowlingGame();
         }
     }
 }

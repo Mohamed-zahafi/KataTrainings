@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace KataTraining.Tests.RomanNumerals
 {
-    internal class RomanNumeralsTests
+    [TestClass]
+    public class RomanNumeralsTests
     {
+        [TestMethod]
+        public void Should_Convert_Return_I()
+        {
+
+        }
     }
 }

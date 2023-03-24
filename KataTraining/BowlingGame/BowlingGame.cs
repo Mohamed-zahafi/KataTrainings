@@ -45,7 +45,7 @@
 
         private int calcSpare(int rollIndex)
         {
-            return calcRegular(rollIndex) + _rolls[rollIndex + 1];
+            return calcRegular(rollIndex) + _rolls[rollIndex + 2];
         }
         private int calcSrike(int rollIndex)
         {
