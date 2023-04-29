@@ -1,4 +1,4 @@
-namespace KataTraining.Tests
+namespace KataTraining.Tests.BowlingGameTests
 {
     /*
         Les règles de calcul du bowling sont relativement simples, 
