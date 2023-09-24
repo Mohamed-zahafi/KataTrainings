@@ -1,10 +1,4 @@
 
-### ### Écrire un programme qui demande à l'utilisateur de saisir un nombre entier et qui affiche si ce nombre est pair ou impair.
-**Exemple**
-
-Entrée : 7
-
-Sortie : "Le nombre est impair"
 
 ### Écrire un programme qui demande à l'utilisateur de saisir un nombre entier et qui affiche tous les nombres premiers inférieurs ou égaux à ce nombre.
 **Exemple**
