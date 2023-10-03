@@ -17,13 +17,19 @@ namespace KataTraining.Tests.TrainingsTests
     {
 
         [TestMethod]
-        public void FindAnargams()
+        public void AnargamTestOne()
         {
             var training = new Trainings.ExerciceSeven();
-            var output = training.GetAnargames(new List<string> { "listen", "silent" });
-            Assert.AreEqual("Les chaînes sont des anagrammes", output);
-
+            var output = training.IsAnagram("spote", "poste");
+            Assert.AreEqual(true, output);
         }
 
+        [TestMethod]
+        public void AnagramTEstTwo()
+        {
+            var training = new Trainings.ExerciceSeven();
+            var output = training.IsAnagram("sport", "poste");
+            Assert.AreNotEqual(true, output);
+        }
     }
 }

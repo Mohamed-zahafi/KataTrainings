@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace KataTraining.ITrainings
 {
-    internal interface IExerciceSeven
+    internal interface IExerciceEight
     {
-        public bool IsAnagram(string word1, string word2);
+        public List<int> GetPerfectSquare(List<int> numbers);
     }
 }

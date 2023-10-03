@@ -8,37 +8,19 @@ namespace KataTraining.Trainings
 {
     public class ExerciceSeven
     {
-        //### Écrire un programme qui demande à l'utilisateur de saisir deux chaînes de caractères et qui affiche si ces deux chaînes sont des anagrammes.
-        //**Exemple**
-        //Entrée : "listen", "silent"
-
-        //Sortie : "Les chaînes sont des anagrammes"
-
-        public List<string> GetAnargames(List<string> words) 
+        public bool IsAnagram(string word1, string word2)
         {
-            List<string> anargamWords = new List<string>();
-            foreach (string word in words)
+            char[] char1 = word1.ToCharArray();
+            char[] char2 = word2.ToCharArray();
+
+            if (word1.Length != word2.Length)
             {
-                if (IsAnargam(word))
-                {
-                    anargamWords.Add(word);
-                }
+                Console.WriteLine("Les mots saisis ne sont pas des anagrammes");
             }
-            return anargamWords;
-        }
 
-        private bool IsAnargam(string word)
-        {
-
-
-
-
-
-
-
-
-
-            return true;
+            Array.Sort(char1);
+            Array.Sort(char2);
+            return new string(char1) == new string(char2);
         }
     }
 }
